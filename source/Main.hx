@@ -94,8 +94,8 @@ class Main extends Sprite
 			"hating simulator ft. moawling"
 		],
 		[
-		  ['Triggered', 'Slaughter', 'Overkill']
-		  ['Flippy', 'Flippy-blood', 'Flippy-crazy']
+		  ['Triggered', 'Slaughter', 'Overkill'],
+		  ['Flippy', 'Flippy-blood', 'Flippy-crazy'],
 			[FlxColor.fromRGB(206, 106, 169)],
 			"That killer"
 		],
