@@ -349,7 +349,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         
         var Trees:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/trees'));
         bt.scrollFactor.set(0.8, 0.8);
-        add(trees);
+        add(Trees);
         
         var ground:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/ground'));
         add(ground);
