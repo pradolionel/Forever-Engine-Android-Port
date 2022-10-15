@@ -78,6 +78,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'school';
 				case 'thorns':
 					curStage = 'schoolEvil';
+        case 'triggered':
+          curStage = 'camp'
 				default:
 					curStage = 'stage';
 			}
@@ -335,6 +337,28 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				bg.scrollFactor.set(0.8, 0.9);
 				bg.scale.set(6, 6);
 				add(bg);
+      case 'camp':
+        PlayState.defaultCamZoom = 0.6;
+
+        var bgSky:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/sky')
+        add(bgSky);
+       
+        var bt:FNFSprite = new FNFSprite(-600, -300).loadGraphic.(Paths.image('backgrounds/' + curStage + '/backtrees')
+        bt.scrollFactor.set(0.5, 0.5)
+        add(bt);
+        
+        var Trees:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/trees')
+        bt.scrollFactor.set(0.8, 0.8)
+        add(trees);
+        
+        var ground:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/ground')
+        add(ground);
+        
+       var Mesa:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table')
+        Mesa.updateHitbox();
+        Mesa.scrollFactor.set(1.2, 1.2)
+        add(Mesa);
+       
 
 			default:
 				PlayState.defaultCamZoom = 0.9;
@@ -446,6 +470,11 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
+			case 'camp':
+			  dad.x += 50
+			  dad.y += 250
+			  boyfriend.x += 200;
+				boyfriend.y += 220;
 		}
 	}
 
