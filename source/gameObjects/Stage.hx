@@ -343,7 +343,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         var bgSky:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/sky'));
         add(bgSky);
        
-        var bt:FNFSprite = new FNFSprite(-600, -300).loadGraphic.(Paths.image('backgrounds/' + curStage + '/backtrees'));
+        var bt:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/backtrees'));
         bt.scrollFactor.set(0.5, 0.5);
         add(bt);
         
