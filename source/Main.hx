@@ -63,6 +63,12 @@ class Main extends Sprite
 			[FlxColor.fromRGB(215, 255, 167)],
 			"That killer"
 		],
+		[
+		  ['Test'],
+		  ['Flippy']
+		  [FlxColor.fromRGB(215, 255, 167)],
+      "no"
+    ]
 	];
 
 	// most of these variables are just from the base game!
