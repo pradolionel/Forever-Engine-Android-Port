@@ -485,7 +485,7 @@ class Character extends FNFSprite
 			case 'flippy-crazy':
 			  frames = Paths.getSparrowAtlas('characters/FLIPPY_crazy');
 			  
-			  animation.addByPrefix('idle', 'FLP3 Idle', 24, false);
+			  animation.addByPrefix('idle', 'FLP3 idle', 24, false);
 			  animation.addByPrefix('singDOWN', 'FLP3 M DOWN', 24, false);
 			  animation.addByPrefix('singUP', 'FLP3 M UP', 24, false);
 			  animation.addByPrefix('singLEFT', 'FLP3 M LEFT', 24, false);
