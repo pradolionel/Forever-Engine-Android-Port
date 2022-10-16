@@ -485,11 +485,11 @@ class Character extends FNFSprite
 			case 'flippy-crazy':
 			  frames = Paths.getSparrowAtlas('characters/FLIPPY_crazy');
 			  
-			  animation.addByPrefix('idle', 'FLIPPY Idle', 24, false);
-			  animation.addByPrefix('singDOWN', 'FLP M DOWN', 24, false);
-			  animation.addByPrefix('singUP', 'FLP M UP', 24, false);
-			  animation.addByPrefix('singLEFT', 'FLP M LEFT', 24, false);
-			  animation.addByPrefix('singRIGHT', 'FLP M RIGHT', 24, false);
+			  animation.addByPrefix('idle', 'FLP3 Idle', 24, false);
+			  animation.addByPrefix('singDOWN', 'FLP3 M DOWN', 24, false);
+			  animation.addByPrefix('singUP', 'FLP3 M UP', 24, false);
+			  animation.addByPrefix('singLEFT', 'FLP3 M LEFT', 24, false);
+			  animation.addByPrefix('singRIGHT', 'FLP3 M RIGHT', 24, false);
 			  
 			  playAnim('idle');
 			  
