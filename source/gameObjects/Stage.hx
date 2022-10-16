@@ -482,12 +482,12 @@ class Stage extends FlxTypedGroup<FlxBasic>
 		switch (curStage)
 		{
 		  case 'camp'
-		  remove(bf);
-      remove(dad);
-      remove(Mesa);
-      add(bf);
-      add(dad);
-      add(Mesa);
+        remove(bf);
+        remove(dad);
+        remove(Mesa);
+        add(bf);
+        add(dad);
+        add(Mesa);
 		}
 	}
 
