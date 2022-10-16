@@ -95,7 +95,7 @@ class Main extends Sprite
 		],
 		[
 		  ['Triggered', 'Slaughter', 'Overkill'],
-		  ['Flippy', 'Flippy-blood', 'Flippy-crazy'],
+		  ['Flippy', 'Flippy', 'Flippy'],
 			[FlxColor.fromRGB(206, 106, 169)],
 			"That killer"
 		],
