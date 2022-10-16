@@ -480,7 +480,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				boyfriend.y += 220;
 		}
 		switch (curStage)
-		{
+		{ //Like Lua, addLuaSpritd('tu puta madre', true)
 		  case 'camp'
         remove(bf);
         remove(dad);
