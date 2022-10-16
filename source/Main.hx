@@ -65,9 +65,9 @@ class Main extends Sprite
 		],
 		[
 		  ['Test'],
-		  ['Flippy']
+		  ['Flippy'],
 		  [FlxColor.fromRGB(215, 255, 167)],
-      "no"
+		  "no"
     ]
 	];
 
