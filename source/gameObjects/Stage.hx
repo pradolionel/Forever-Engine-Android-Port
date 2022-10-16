@@ -84,6 +84,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
           curStage = 'camp';
         case 'overkill':
           curStage = 'camp';
+        case 'fallout':
+          curStage = 'camp';
 				default:
 					curStage = 'stage';
 			}
