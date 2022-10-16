@@ -477,7 +477,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gf.y += 300;
 			case 'camp':
 			  dad.x += 50;
-			  dad.y += 250;
+			  dad.y += 0;
 			  boyfriend.x += 200;
 				boyfriend.y += 220;
 		}
@@ -487,6 +487,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         remove(bf);
         remove(dad);
         remove(Mesa);
+        remove(gf);
         add(bf);
         add(dad);
         add(Mesa);
