@@ -486,9 +486,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 		  case 'camp':
         remove(bf);
         remove(dad);
-        remove(Mesa);
+        remove(Mesita);
         remove(gf);
-        add(bf);
+        add(boyfriend);
         add(dad);
         add(Mesita);
 		}
