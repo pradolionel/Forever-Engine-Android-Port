@@ -479,6 +479,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			  boyfriend.x += 200;
 				boyfriend.y += 220;
 		}
+		switch (curStage)
+		{
+		  case 'camp'
+		  remove(bf);
+      remove(dad);
+      remove(Mesa);
+      add(bf);
+      add(dad);
+      add(Mesa);
+		}
 	}
 
 	var curLight:Int = 0;
