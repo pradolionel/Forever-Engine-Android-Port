@@ -360,10 +360,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
         var ground:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/ground'));
         add(ground);
         
-       var Mesa:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
-        Mesa.updateHitbox();
-        Mesa.scrollFactor.set(1.2, 1.2);
-        add(Mesa);
+       var Mesita:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
+        Mesita.updateHitbox();
+        Mesita.scrollFactor.set(1.2, 1.2);
+        add(Mesita);
        
 			default:
 				PlayState.defaultCamZoom = 0.9;
@@ -490,7 +490,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         remove(gf);
         add(bf);
         add(dad);
-        add(Mesa);
+        add(Mesita);
 		}
 	}
 
