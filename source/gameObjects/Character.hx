@@ -471,6 +471,28 @@ class Character extends FNFSprite
 			  
 			  playAnim('idle');
 			  
+			case 'flippy-blood':
+			  frames = Paths.getSparrowAtlas('characters/FLIPPY_bloody');
+			  
+			  animation.addByPrefix('idle', 'FLIPPY Idle', 24, false);
+			  animation.addByPrefix('singDOWN', 'FLP M DOWN', 24, false);
+			  animation.addByPrefix('singUP', 'FLP M UP', 24, false);
+			  animation.addByPrefix('singLEFT', 'FLP M LEFT', 24, false);
+			  animation.addByPrefix('singRIGHT', 'FLP M RIGHT', 24, false);
+			  
+			  playAnim('idle');
+			  
+			case 'flippy-crazy':
+			  frames = Paths.getSparrowAtlas('characters/FLIPPY_crazy');
+			  
+			  animation.addByPrefix('idle', 'FLIPPY Idle', 24, false);
+			  animation.addByPrefix('singDOWN', 'FLP M DOWN', 24, false);
+			  animation.addByPrefix('singUP', 'FLP M UP', 24, false);
+			  animation.addByPrefix('singLEFT', 'FLP M LEFT', 24, false);
+			  animation.addByPrefix('singRIGHT', 'FLP M RIGHT', 24, false);
+			  
+			  playAnim('idle');
+			  
 			default:
 				// set up animations if they aren't already
 
