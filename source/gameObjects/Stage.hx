@@ -363,6 +363,11 @@ class Stage extends FlxTypedGroup<FlxBasic>
        var Mesita = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
         Mesita.updateHitbox();
         Mesita.scrollFactor.set(1.2, 1.2);
+        remove(boyfriend);
+        remove(dad);
+        remove(gf);
+        add(boyfriend);
+        add(dad);
         add(Mesita);
        
 			default:
@@ -480,17 +485,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			  dad.y += 0;
 			  boyfriend.x += 200;
 				boyfriend.y += 220;
-		}
-		switch (curStage)
-		{ //Like Lua, addLuaSpritd('tu puta madre', true)
-		  case 'camp':
-        remove(boyfriend);
-        remove(dad);
-        remove(Mesita);
-        remove(gf);
-        add(boyfriend);
-        add(dad);
-        add(Mesita);
 		}
 	}
 
