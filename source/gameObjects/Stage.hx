@@ -363,11 +363,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
        var Mesita = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
         Mesita.updateHitbox();
         Mesita.scrollFactor.set(1.2, 1.2);
-        remove(boyfriend);
-        remove(dad);
-        remove(gf);
-        add(boyfriend);
-        add(dad);
         add(Mesita);
        
 			default:
