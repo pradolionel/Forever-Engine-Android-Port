@@ -37,6 +37,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	public var limo:FNFSprite;
 
 	public var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
+	
+	public static var camHUD:FlxCamera;
+	public static var camGame:FlxCamera;
 
 	var fastCar:FNFSprite;
 
@@ -362,7 +365,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         add(ground);
         
        var Mesita = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
-        Mesita.cameras = [camHUD];
+        Mesita.cameras = [camGame];
         Mesita.scrollFactor.set(1.2, 1.2);
         add(Mesita);
        
