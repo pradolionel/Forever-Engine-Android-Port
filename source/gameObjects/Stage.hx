@@ -486,8 +486,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gf.y += 999;
 				gf.x -= 999;
 		}
-		{
       switch (curStage)
+      {
         case 'camp':
           remove(boyfriend);
           remove(dad);
