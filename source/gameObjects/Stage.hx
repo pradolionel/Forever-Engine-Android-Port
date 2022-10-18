@@ -348,7 +348,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				add(bg);
       case 'camp':
         PlayState.defaultCamZoom = 0.6;
-        PlayState.cameras = cameras;
 
         var bgSky:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/sky'));
         add(bgSky);
