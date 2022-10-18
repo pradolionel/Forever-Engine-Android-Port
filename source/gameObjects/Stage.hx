@@ -483,6 +483,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			  dad.y += 0;
 			  boyfriend.x += 200;
 				boyfriend.y += 220;
+				gf.y += 999;
+				gf.x -= 999;
 		}
 	}
 
