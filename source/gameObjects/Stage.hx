@@ -361,7 +361,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         add(ground);
         
        var Mesita = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
-        Mesita.updateHitbox();
+        Mesita.cameras = [camHud];
         Mesita.scrollFactor.set(1.2, 1.2);
         add(Mesita);
        
