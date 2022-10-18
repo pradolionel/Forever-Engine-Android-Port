@@ -46,6 +46,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	var upperBoppers:FNFSprite;
 	var bottomBoppers:FNFSprite;
 	var santa:FNFSprite;
+	var Mesita:FNFSprite;
 
 	var bgGirls:BackgroundGirls;
 
@@ -363,8 +364,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         var ground:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/ground'));
         add(ground);
         
-       var Mesita = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
-        Mesita.cameras = [camGame];
+        Mesita = new (-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
         Mesita.scrollFactor.set(1.2, 1.2);
         add(Mesita);
        
@@ -485,6 +485,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				boyfriend.y += 220;
 				gf.y += 999;
 				gf.x -= 999;
+		}
+		{
+      switch (curStage)
+        case 'camp':
+          remove(boyfriend);
+          remove(dad);
+          remove(gf);
+          add(boyfriend);
+          add(dad);
+          add(Mesita);
 		}
 	}
 
