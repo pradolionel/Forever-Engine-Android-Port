@@ -364,7 +364,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
         var ground:FNFSprite = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/ground'));
         add(ground);
         
-        Mesita = new (-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
+        Mesita = new FNFSprite(-600, -300).loadGraphic(Paths.image('backgrounds/' + curStage + '/table'));
         Mesita.scrollFactor.set(1.2, 1.2);
         add(Mesita);
        
