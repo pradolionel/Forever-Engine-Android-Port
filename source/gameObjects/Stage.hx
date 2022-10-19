@@ -483,18 +483,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			  dad.y -= 100;
 			  boyfriend.x += 200;
 				boyfriend.y += 220;
-				gf.y += 999;
-				gf.x -= 999;
+				gf.y += 50;
+				gf.x -= 50;
 		}
       switch (curStage)
       {
         case 'camp':
-          remove(boyfriend);
-          remove(dad);
-          remove(gf);
-          add(boyfriend);
           add(dad);
           add(Mesita);
+          
+          gf.visible = [false];
 		}
 	}
 
