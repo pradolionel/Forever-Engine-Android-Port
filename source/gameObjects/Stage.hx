@@ -486,14 +486,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gf.y += 50;
 				gf.x -= 50;
 		}
-      switch (curStage)
-      {
-        case 'camp':
-          add(dad);
-          add(Mesita);
-          
-          gf.visible = [false];
-		}
 	}
 
 	var curLight:Int = 0;
@@ -558,6 +550,12 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					trainCooldown = FlxG.random.int(-4, 0);
 					trainStart();
 				}
+      case 'camp':
+        add(dad);
+        add(Mesita);
+        
+        gf.visible = [false];
+        // Supongo que aca se va a arreglar el beat de dad
 		}
 	}
 
