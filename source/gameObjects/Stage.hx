@@ -551,10 +551,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					trainStart();
 				}
       case 'camp':
-        add(dad);
+        add(dadOpponent);
         add(Mesita);
         
-        gf.visible = [false];
+        remove(gf);
         // Supongo que aca se va a arreglar el beat de dad
 		}
 	}
